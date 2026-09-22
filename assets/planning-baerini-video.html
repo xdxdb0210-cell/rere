@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>배린이가 미치면 생기는 일 | 영상 기획안</title>
+    <style>
+      :root {
+        --paper: #f7f1e8;
+        --paper-2: #fff9ee;
+        --ink: #16120f;
+        --muted: #6f655c;
+        --line: rgba(22, 18, 15, 0.14);
+        --coral: #ff645f;
+        --blue: #385cff;
+        --lime: #c8f45d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 12% 4%, rgba(255, 100, 95, 0.16), transparent 24rem),
+          radial-gradient(circle at 90% 0%, rgba(56, 92, 255, 0.14), transparent 24rem),
+          var(--paper);
+        color: var(--ink);
+        font-family: "Pretendard", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+        line-height: 1.68;
+        word-break: keep-all;
+      }
+      main { max-width: 1180px; margin: 0 auto; padding: clamp(34px, 6vw, 82px) clamp(18px, 4vw, 42px); }
+      a { color: inherit; }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.72fr);
+        gap: 24px;
+        align-items: stretch;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 42px;
+      }
+      .eyebrow { color: #d54d4a; font-size: 12px; font-weight: 900; margin: 0 0 14px; }
+      h1 { font-size: clamp(44px, 7vw, 88px); line-height: 0.98; margin: 0 0 22px; }
+      h2 { font-size: clamp(26px, 3vw, 42px); line-height: 1.08; margin: 0 0 18px; }
+      h3 { font-size: 21px; line-height: 1.18; margin: 0 0 8px; }
+      p { margin: 0 0 14px; }
+      .lead { color: #342c25; font-size: clamp(18px, 2vw, 24px); font-weight: 750; margin: 0; }
+      .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+      .tag-row span { border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 850; padding: 7px 10px; }
+      .video-card { background: #151515; border-radius: 14px; color: #fff9ee; overflow: hidden; box-shadow: 0 24px 80px rgba(22, 18, 15, 0.16); }
+      .video-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+      .video-card div { padding: 20px; }
+      .video-card a { align-items: center; background: var(--lime); border-radius: 999px; color: var(--ink); display: inline-flex; font-weight: 900; margin-top: 14px; padding: 10px 14px; text-decoration: none; }
+      section { border-bottom: 1px solid var(--line); padding: 34px 0; }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      article, .note { background: rgba(255, 249, 238, 0.76); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+      .feature-note { background: var(--ink); color: var(--paper-2); }
+      .feature-note p { color: rgba(255, 249, 238, 0.78); }
+      ul, ol { margin: 0; padding-left: 20px; }
+      li + li { margin-top: 8px; }
+      .matrix { display: grid; gap: 10px; }
+      .matrix div { border-top: 1px solid var(--line); display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; padding-top: 12px; }
+      .matrix span { color: #d54d4a; font-weight: 900; }
+      .footer-note { color: var(--muted); font-size: 14px; padding-top: 24px; }
+      @media (max-width: 820px) { .hero, .grid, .matrix div { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">VIDEO PRODUCTION PLAN</p>
+          <h1>배린이가 미치면 생기는 일</h1>
+          <p class="lead">
+            초보 플레이의 실수와 과몰입 리액션을 웃음 포인트로 바꾸고, 시청자가 끝까지 따라올 수 있도록 장면의 순서와 편집 리듬을 설계한 게임 예능형 영상 기획안입니다.
+          </p>
+          <div class="tag-row" aria-label="핵심 키워드">
+            <span>게임 예능</span>
+            <span>배틀그라운드</span>
+            <span>초보자 공감</span>
+            <span>리액션 편집</span>
+            <span>업로드 회고</span>
+          </div>
+        </div>
+        <aside class="video-card">
+          <img src="https://i.ytimg.com/vi/QN0WuIsAuWc/hqdefault.jpg" alt="배린이가 미치면 생기는 일 유튜브 썸네일" />
+          <div>
+            <strong>업로드 영상</strong>
+            <p>제작 및 업로드 링크를 함께 제시해 실제 산출물 확인이 가능하도록 구성했습니다.</p>
+            <a href="https://youtu.be/QN0WuIsAuWc" target="_blank" rel="noreferrer">유튜브에서 보기</a>
+          </div>
+        </aside>
+      </section>
+
+      <section>
+        <h2>1. 기획 의도</h2>
+        <p>
+          이 영상은 잘하는 플레이보다 초보 플레이어가 만들어내는 예측 불가한 판단과 리액션을 중심 재미로 삼습니다.
+          시청자는 게임 실력보다 상황이 점점 꼬이는 과정, 당황한 반응, 의외의 선택에서 웃음을 얻습니다.
+        </p>
+        <p>
+          따라서 핵심은 플레이를 길게 설명하는 것이 아니라, 장면마다 “왜 웃긴지”가 바로 전달되도록 리액션과 결과를 짧게 붙이는 것입니다.
+          제품 관련 정보는 콘텐츠의 주제가 아니라, 플레이 상황을 설명할 때 필요한 보조 맥락으로만 사용합니다.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h3>목표 시청자</h3>
+          <ul>
+            <li>배틀그라운드 또는 게임 예능 콘텐츠를 가볍게 보는 시청자</li>
+            <li>초보 플레이의 실수와 리액션에 공감하는 게임 유저</li>
+            <li>짧은 호흡의 웃긴 장면과 하이라이트 편집을 선호하는 시청자</li>
+          </ul>
+        </article>
+        <article>
+          <h3>핵심 메시지</h3>
+          <p>
+            “게임을 잘하지 않아도 캐릭터와 반응이 분명하면 콘텐츠가 된다.”
+            초보자의 불안정한 플레이를 단점이 아니라 영상의 캐릭터성으로 전환합니다.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>2. 영상 구성안</h2>
+        <div class="grid">
+          <article><h3>오프닝 훅</h3><p>가장 당황스럽거나 웃긴 장면을 먼저 배치해 영상의 톤을 즉시 보여줍니다.</p></article>
+          <article><h3>상황 세팅</h3><p>“배린이”라는 캐릭터와 플레이 상태를 짧게 설명해 이후 실수와 리액션을 이해하게 만듭니다.</p></article>
+          <article><h3>사건 확장</h3><p>이동, 교전, 파밍, 팀원 반응을 빠른 컷으로 연결해 느슨한 구간을 줄입니다.</p></article>
+          <article><h3>맥락 정보 정리</h3><p>제품 관련 멘트는 플레이 컨디션을 설명하는 순간에 짧게 넣고, 장면의 주도권은 리액션에 둡니다.</p></article>
+          <article><h3>클라이맥스</h3><p>가장 큰 실수나 의외의 장면을 후반부에 배치하고, 리플레이/줌/자막으로 웃음 포인트를 강조합니다.</p></article>
+          <article><h3>마무리</h3><p>다음 게임 영상이나 숏폼 컷다운으로 이어질 수 있는 반응 포인트를 남깁니다.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 편집 방향</h2>
+        <ul>
+          <li>첫 5초 안에 가장 강한 리액션 또는 실패 장면을 배치합니다.</li>
+          <li>불필요한 이동 구간은 덜어내고, 판단과 결과가 바로 이어지게 컷을 압축합니다.</li>
+          <li>자막은 설명보다 감정선과 반응을 살리는 문장 중심으로 사용합니다.</li>
+          <li>줌인, 정지 화면, 효과음은 웃음 포인트가 터지는 순간에만 사용합니다.</li>
+          <li>제품 관련 멘트는 플레이 흐름을 끊지 않는 짧은 보조 정보로 처리합니다.</li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h3>제목 방향</h3>
+          <p>
+            현재 제목인 “배린이가 미치면 생기는 일”은 초보자 캐릭터와 예측 불가 상황을 동시에 보여줍니다.
+            제목만으로도 실력보다 리액션 중심 콘텐츠임을 예상하게 만드는 장점이 있습니다.
+          </p>
+        </article>
+        <article>
+          <h3>썸네일 방향</h3>
+          <p>
+            표정, 위기 상황, 짧은 강한 문구를 중심으로 구성합니다. “초보”, “멘붕”, “왜 이래?”처럼 상황이 바로 읽히는 단어가 적합합니다.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>4. 제작 판단 매트릭스</h2>
+        <div class="matrix">
+          <div><span>후킹</span><p>가장 강한 장면을 첫 화면에 배치해 이탈을 줄입니다.</p></div>
+          <div><span>리듬</span><p>설명보다 반응과 결과가 맞물리는 컷을 우선합니다.</p></div>
+          <div><span>커머스 맥락</span><p>지슈라2는 영상의 중심이 아니라 플레이 컨디션을 설명하는 보조 정보로만 둡니다.</p></div>
+          <div><span>회고</span><p>업로드 이후 반응을 다음 편집, 숏폼 컷다운, 제목 개선에 반영합니다.</p></div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="feature-note">
+          <h3>포트폴리오에서 강조할 역할</h3>
+          <p>
+            이 프로젝트는 단순 업로드 기록이 아니라, 원본 플레이를 시청 가능한 콘텐츠 흐름으로 재구성한 경험입니다.
+            기획, 녹화 구성, 컷 편집, 자막 방향, 제목/업로드 패키징, 업로드 이후 회고까지 이어지는 제작 판단을 강조합니다.
+          </p>
+        </article>
+        <article>
+          <h3>다음 제작 적용</h3>
+          <p>
+            반응이 좋은 장면은 숏폼으로 재가공하고, 어색한 설명 구간은 다음 영상에서 플레이 상황과 더 밀접하게 연결합니다.
+            조회수뿐 아니라 초반 유지, 댓글 반응, 다시 볼 만한 리액션 컷을 함께 확인합니다.
+          </p>
+        </article>
+      </section>
+
+      <p class="footer-note">연결 영상: https://youtu.be/QN0WuIsAuWc</p>
+    </main>
+  </body>
+</html>
